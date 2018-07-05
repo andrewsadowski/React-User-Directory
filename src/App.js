@@ -21,9 +21,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Directory</h1>
-        <ul>
+        <ul className="person-ul">
           {Object.keys(this.state.users).map(key => (
             <Person
+              className="personContainer"
               key={key}
               details={this.state.users[key]}
               index={key}

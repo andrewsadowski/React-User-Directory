@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.person-ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border: 1px solid black;
+}
+
+.personContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid black;
+}
