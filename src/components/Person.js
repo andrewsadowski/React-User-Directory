@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 
 class Person extends Component {
   mapPerson = props => {
-    return this.props.users.map(user => <li>user.name</li>);
+    return this.props.users.map(user => {
+      <React.Fragment>
+        <p>{user.name}</p>
+        <p>{user.email}</p>
+      </React.Fragment>;
+    });
   };
 
   render(props) {
     return (
       <div>
         <h1>Person1</h1>
-        <p>{this.mapPerson}</p>
+        {this.mapPerson}
       </div>
     );
   }
